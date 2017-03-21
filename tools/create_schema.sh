@@ -414,7 +414,7 @@ CREATE TABLE tls906_person (
   PRIMARY KEY (person_id),
   KEY IX_ppat_person_ctry_code (person_ctry_code),
   KEY IX_ppat_han_id (han_id),
-  KEY IX_han_name (han_name(333)),
+  KEY IX_han_name (han_name(250)),
   KEY IX_han_harmonized (han_harmonized)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci  AVG_ROW_LENGTH=100;
 
@@ -434,8 +434,8 @@ CREATE TABLE tls909_eee_ppat (
   pat_cnt int(11) NOT NULL,
   PRIMARY KEY (person_id),
   KEY IX_ppat_person_ctry_code (person_ctry_code),
-  KEY IX_ppat_hrm_l1 (hrm_l1(333)),
-  KEY IX_ppat_hrm_l2 (hrm_l2(333)),
+  KEY IX_ppat_hrm_l1 (hrm_l1(250)),
+  KEY IX_ppat_hrm_l2 (hrm_l2(250)),
   KEY IX_ppat_sector (sector),
   KEY IX_ppat_hrm_l2_id (hrm_l2_id)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci  AVG_ROW_LENGTH=100;
